@@ -99,19 +99,19 @@
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="lets-encrypt-standalone-on-centos-7">Let's Encrypt Standalone on Centos 7</h1>
+<h1 id="lets-encrypt-standalone-on-centos-7">Let's Encrypt Standalone on Centos 7<a class="headerlink" href="#lets-encrypt-standalone-on-centos-7" title="Permanent link">#</a></h1>
 <ol>
 <li>sudo yum --enablerepo=extras install epel-release</li>
 <li>sudo yum install certbot</li>
 <li>certbot --version</li>
 <li>sudo certbot certonly --standalone --preferred-challenges http -d example.com</li>
 </ol>
-<h2 id="auto-renewal">Auto-Renewal</h2>
+<h2 id="auto-renewal">Auto-Renewal<a class="headerlink" href="#auto-renewal" title="Permanent link">#</a></h2>
 <ol>
 <li>sudo systemctl enable --now certbot-renew.timer</li>
 <li>sudo systemctl status certbot-renew.timer</li>
 </ol>
-<h2 id="renew-hook">Renew Hook</h2>
+<h2 id="renew-hook">Renew Hook<a class="headerlink" href="#renew-hook" title="Permanent link">#</a></h2>
 <ol>
 <li>sudo vi /etc/letsencrypt/renewal/example.com.conf</li>
 <li>renew_hook = systemctl reload rabbitmq - This goes on the last line.</li>
