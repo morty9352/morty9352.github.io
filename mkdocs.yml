@@ -1,0 +1,22 @@
+site_name: Gary Morton
+site_description: Gary Morton
+site_author: Gary Morton
+site_url: https://morty9352.github.io
+nav:
+        - Home: 'index.md'
+        - Certs: 'lets-encrypt.md'
+        - Crossfit:
+                - '2020':
+                        - 'WODs': 'wod.md'
+                        - 'Benchmark WODs': 'benchmarks.md'
+markdown_extensions:
+        - toc:
+                permalink: '#'
+                baselevel: 1
+theme: 
+        name: mkdocs
+        highlightjs: true
+        hljs_languages:
+                - yaml
+                - rust
+        nav_style: dark
