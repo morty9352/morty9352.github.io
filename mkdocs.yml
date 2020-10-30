@@ -4,7 +4,7 @@ site_author: Gary Morton
 site_url: https://morty9352.github.io
 nav:
         - Home: 'index.md'
-        - Certs: 'lets-encrypt.md'
+        - Instructions: 'lets-encrypt.md'
         - Crossfit:
                 - '2020':
                         - 'WODs': 'wod.md'
