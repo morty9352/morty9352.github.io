@@ -9,13 +9,13 @@
         <link rel="canonical" href="https://morty9352.github.io/wod/">
         <link rel="shortcut icon" href="../img/favicon.ico">
         <title>WODs - Gary Morton</title>
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
@@ -32,46 +32,38 @@
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="..">Gary Morton</a>
-                </div>
+                <a class="navbar-brand" href="..">Gary Morton</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="..">Home</a>
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
                             </li>
-                            <li >
-                                <a href="../lets-encrypt/">Instructions</a>
+                            <li class="navitem">
+                                <a href="../lets-encrypt/" class="nav-link">Instructions</a>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Crossfit <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Crossfit <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
   <li class="dropdown-submenu">
-    <a href="#">2020</a>
+    <a href="#" class="dropdown-item">2020</a>
     <ul class="dropdown-menu">
             
-<li class="active">
-    <a href="./">WODs</a>
+<li>
+    <a href="./" class="dropdown-item active">WODs</a>
 </li>
             
-<li >
-    <a href="../benchmarks/">Benchmark WODs</a>
+<li>
+    <a href="../benchmarks/" class="dropdown-item">Benchmark WODs</a>
 </li>
     </ul>
   </li>
@@ -79,19 +71,19 @@
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../lets-encrypt/">
+                            <li class="nav-item">
+                                <a rel="prev" href="../lets-encrypt/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../benchmarks/">
+                            <li class="nav-item">
+                                <a rel="next" href="../benchmarks/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -101,24 +93,84 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#-week-32-">--Week 32--</a></li>
-        <li class="main "><a href="#monday-3-aug-2020">Monday 3 AUG 2020</a></li>
-        <li class="main "><a href="#tuesday-4-aug-2020">Tuesday 4 AUG 2020</a></li>
-        <li class="main "><a href="#-restarted-workouts-">---RESTARTED WORKOUTS---</a></li>
-            <li><a href="#-week-43-">--Week 43--</a></li>
-        <li class="main "><a href="#thursday-22-oct-2020">Thursday 22 OCT 2020</a></li>
-        <li class="main "><a href="#friday-23-oct-2020">Friday 23 OCT 2020</a></li>
-            <li><a href="#-week-44-">--Week 44--</a></li>
-        <li class="main "><a href="#monday-26-oct-2020">Monday 26 OCT 2020</a></li>
-        <li class="main "><a href="#tuesday-27-oct-2020">Tuesday 27 OCT 2020</a></li>
-        <li class="main "><a href="#wednesday-28-oct-2020">Wednesday 28 OCT 2020</a></li>
-        <li class="main "><a href="#thursday-29-oct-2020">Thursday 29 OCT 2020</a></li>
-        <li class="main "><a href="#friday-30-oct-2020">Friday 30 OCT 2020</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#-week-32-" class="nav-link">--Week 32--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-3-aug-2020" class="nav-link">Monday 3 AUG 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-4-aug-2020" class="nav-link">Tuesday 4 AUG 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-restarted-workouts-" class="nav-link">---RESTARTED WORKOUTS---</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-week-43-" class="nav-link">--Week 43--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-22-oct-2020" class="nav-link">Thursday 22 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-23-oct-2020" class="nav-link">Friday 23 OCT 2020</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-week-44-" class="nav-link">--Week 44--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-26-oct-2020" class="nav-link">Monday 26 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-27-oct-2020" class="nav-link">Tuesday 27 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-28-oct-2020" class="nav-link">Wednesday 28 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-29-oct-2020" class="nav-link">Thursday 29 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-30-oct-2020" class="nav-link">Friday 30 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h2 id="-week-32-">--Week 32--<br><a class="headerlink" href="#-week-32-" title="Permanent link">#</a></h2>
 <h1 id="monday-3-aug-2020">Monday 3 AUG 2020<a class="headerlink" href="#monday-3-aug-2020" title="Permanent link">#</a></h1>
@@ -177,6 +229,7 @@ V-ups -- <em>scaled to situps</em><br />
 40 Situps (partner anchor)<br />
 <strong>Completion = 5+2</strong></p>
 </blockquote></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -190,21 +243,21 @@ V-ups -- <em>scaled to situps</em><br />
         <script src="../js/base.js" defer></script>
         <script src="../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form role="form">
+                <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -213,12 +266,12 @@ V-ups -- <em>scaled to situps</em><br />
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
