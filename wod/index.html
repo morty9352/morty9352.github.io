@@ -9,80 +9,75 @@
         <link rel="canonical" href="https://morty9352.github.io/wod/">
         <link rel="shortcut icon" href="../img/favicon.ico">
         <title>WODs - Gary Morton</title>
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
 
         <script src="../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/rust.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-181784109-2', 'morty9352.github.io');
+            ga('send', 'pageview');
+        </script> 
     </head>
 
     <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="..">Gary Morton</a>
-                </div>
+                <a class="navbar-brand" href="..">Gary Morton</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
+                <div id="navbar-collapse" class="navbar-collapse collapse">
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
-                            <li >
-                                <a href="..">Home</a>
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
                             </li>
-                            <li >
-                                <a href="../lets-encrypt/">Instructions</a>
+                            <li class="navitem">
+                                <a href="../lets-encrypt/" class="nav-link">Instructions</a>
                             </li>
                             <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Crossfit <b class="caret"></b></a>
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Crossfit <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-  <li class="dropdown-submenu">
-    <a href="#">2020</a>
-    <ul class="dropdown-menu">
-            
-<li class="active">
-    <a href="./">WODs</a>
+<li>
+    <a href="./" class="dropdown-item active">WODs</a>
 </li>
-            
-<li >
-    <a href="../benchmarks/">Benchmark WODs</a>
+                                    
+<li>
+    <a href="../benchmarks/" class="dropdown-item">Benchmark WODs</a>
 </li>
-    </ul>
-  </li>
                                 </ul>
                             </li>
                         </ul>
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
-                            <li >
-                                <a rel="next" href="../lets-encrypt/">
+                            <li class="nav-item">
+                                <a rel="prev" href="../lets-encrypt/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
-                            <li >
-                                <a rel="prev" href="../benchmarks/">
+                            <li class="nav-item">
+                                <a rel="next" href="../benchmarks/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -92,23 +87,763 @@
         </div>
 
         <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#-week-32-">--Week 32--</a></li>
-        <li class="main "><a href="#monday-3-aug-2020">Monday 3 AUG 2020</a></li>
-        <li class="main "><a href="#tuesday-4-aug-2020">Tuesday 4 AUG 2020</a></li>
-        <li class="main "><a href="#-restarted-workouts-">---RESTARTED WORKOUTS---</a></li>
-            <li><a href="#-week-43-">--Week 43--</a></li>
-        <li class="main "><a href="#thursday-22-oct-2020">Thursday 22 OCT 2020</a></li>
-        <li class="main "><a href="#friday-23-oct-2020">Friday 23 OCT 2020</a></li>
-            <li><a href="#-week-44-">--Week 44--</a></li>
-        <li class="main "><a href="#monday-26-oct-2020">Monday 26 OCT 2020</a></li>
-        <li class="main "><a href="#tuesday-27-oct-2020">Tuesday 27 OCT 2020</a></li>
-        <li class="main "><a href="#wednesday-28-oct-2020">Wednesday 28 OCT 2020</a></li>
-        <li class="main "><a href="#thursday-29-oct-2020">Thursday 29 OCT 2020</a></li>
-    </ul>
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#-week-32-" class="nav-link">--Week 32--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-3-aug-2020" class="nav-link">Monday 3 AUG 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-4-aug-2020" class="nav-link">Tuesday 4 AUG 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-restarted-workouts-" class="nav-link">---RESTARTED WORKOUTS---</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-week-43-" class="nav-link">--Week 43--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-22-oct-2020" class="nav-link">Thursday 22 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-23-oct-2020" class="nav-link">Friday 23 OCT 2020</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-week-44-" class="nav-link">--Week 44--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-26-oct-2020" class="nav-link">Monday 26 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-27-oct-2020" class="nav-link">Tuesday 27 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-28-oct-2020" class="nav-link">Wednesday 28 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-29-oct-2020" class="nav-link">Thursday 29 OCT 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-30-oct-2020" class="nav-link">Friday 30 OCT 2020</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-week-45-" class="nav-link">--Week 45--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-2-nov-2020" class="nav-link">Monday 2 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-3-nov-2020" class="nav-link">Tuesday 3 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-4-nov-2020" class="nav-link">Wednesday 4 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-5-nov-2020" class="nav-link">Thursday 5 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-6-nov-2020" class="nav-link">Friday 6 NOV 2020</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-week-46-" class="nav-link">--Week 46--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-9-nov-2020" class="nav-link">Monday 9 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-10-nov-2020" class="nav-link">Tuesday 10 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-11-nov-2020" class="nav-link">Wednesday 11 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-12-nov-2020" class="nav-link">Thursday 12 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-13-nov-2020" class="nav-link">Friday 13 NOV 2020</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-week-47-" class="nav-link">--Week 47--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-16-nov-2020" class="nav-link">Monday 16 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-17-nov-2020" class="nav-link">Tuesday 17 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-18-nov-2020" class="nav-link">Wednesday 18 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-19-nov-2020" class="nav-link">Thursday 19 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-20-nov-2020" class="nav-link">Friday 20 NOV 2020</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-week-48-" class="nav-link">--Week 48--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-23-nov-2020" class="nav-link">Monday 23 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-24-nov-2020" class="nav-link">Tuesday 24 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-25-nov-2020" class="nav-link">Wednesday 25 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thanksgiving-break" class="nav-link">THANKSGIVING BREAK</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-week-49-" class="nav-link">--Week 49--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-30-nov-2020" class="nav-link">Monday 30 NOV 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-1-dec-2020" class="nav-link">Tuesday 1 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-2-dec-2020" class="nav-link">Wednesday 2 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-3-dec-2020" class="nav-link">Thursday 3 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-4-dec-2020" class="nav-link">Friday 4 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-5-dec-2020" class="nav-link">Saturday 5 DEC 2020</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#-week-50-" class="nav-link">--Week 50--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-7-dec-2020" class="nav-link">Monday 7 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-8-dec-2020" class="nav-link">Tuesday 8 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-9-dec-2020" class="nav-link">Wednesday 9 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-10-dec-2020" class="nav-link">Thursday 10 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-11-dec-2020" class="nav-link">Friday 11 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-12-dec-2020" class="nav-link">Saturday 12 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-51-" class="nav-link">--Week 51--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-14-dec-2020" class="nav-link">Monday 14 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-15-dec-2020" class="nav-link">Tuesday 15 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-16-dec-2020" class="nav-link">Wednesday 16 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-17-dec-2020" class="nav-link">Thursday 17 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-18-dec-2020" class="nav-link">Friday 18 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-19-dec-2020" class="nav-link">Saturday 19 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-52-" class="nav-link">--Week 52--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-21-dec-2020" class="nav-link">Monday 21 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-22-dec-2020" class="nav-link">Tuesday 22 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-23-dec-2020" class="nav-link">Wednesday 23 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-24-dec-2020" class="nav-link">Thursday 24 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-53-" class="nav-link">--Week 53--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-28-dec-2020" class="nav-link">Monday 28 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-29-dec-2020" class="nav-link">Tuesday 29 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-30-dec-2020" class="nav-link">Wednesday 30 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-31-dec-2020" class="nav-link">Thursday 31 DEC 2020</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-2-jan-2021" class="nav-link">Saturday 2 Jan 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-1-2021" class="nav-link">--Week 1--"2021"</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-4-jan-2021" class="nav-link">Monday 4 Jan 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-5-jan-2021" class="nav-link">Tuesday 5 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-6-jan-2021" class="nav-link">Wednesday 6 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-7-jan-2021" class="nav-link">Thursday 7 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-8-jan-2021" class="nav-link">Friday 8 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-9-jan-2021" class="nav-link">Saturday 9 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-2-" class="nav-link">--Week 2--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-11-jan-2021" class="nav-link">Monday 11 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-12-jan-2021" class="nav-link">Tuesday 12 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-13-jan-2021" class="nav-link">Wednesday 13 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-14-jan-2021" class="nav-link">Thursday 14 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-15-jan-2021" class="nav-link">Friday 15 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-16-jan-2021" class="nav-link">Saturday 16 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-3-" class="nav-link">--Week 3--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-18-jan-2021" class="nav-link">Monday 18 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-19-jan-2021" class="nav-link">Tuesday 19 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-20-jan-2021" class="nav-link">Wednesday 20 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-21-jan-2021" class="nav-link">Thursday 21 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-22-jan-2021" class="nav-link">Friday 22 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-4-" class="nav-link">--Week 4--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-25-jan-2021" class="nav-link">Monday 25 Jan 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-26-jan-2021" class="nav-link">Tuesday 26 Jan 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-27-jan-2021" class="nav-link">Wednesday 27 Jan 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-28-jan-2021" class="nav-link">Thursday 28 Jan 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-29-jan-2021" class="nav-link">Friday 29 Jan 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-30-jan-2021" class="nav-link">Saturday 30 JAN 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-5-" class="nav-link">--Week 5--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-1-feb-2021" class="nav-link">Monday 1 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-2-feb-2021" class="nav-link">Tuesday 2 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-3-feb-2021" class="nav-link">Wednesday 3 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-4-feb-2021" class="nav-link">Thursday 4 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-5-feb-2021" class="nav-link">Friday 5 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-6-feb-2021" class="nav-link">Saturday 6 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-6-" class="nav-link">--Week 6--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-8-feb-2021" class="nav-link">Monday 8 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-9-feb-2021" class="nav-link">Tuesday 9 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-10-feb-2021" class="nav-link">Wednesday 10 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-11-feb-2021" class="nav-link">Thursday 11 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-12-feb-2021" class="nav-link">Friday 12 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-13-feb-2021" class="nav-link">Saturday 13 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-7-" class="nav-link">--Week 7--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-20-feb-2021" class="nav-link">Saturday 20 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-8-" class="nav-link">--Week 8--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-22-feb-2021" class="nav-link">Monday 22 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-23-feb-2021" class="nav-link">Tuesday 23 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-24-feb-2021" class="nav-link">Wednesday 24 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-25-feb-2021" class="nav-link">Thursday 25 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-26-feb-2021" class="nav-link">Friday 26 FEB 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-9-" class="nav-link">--Week 9--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-1-mar-2021" class="nav-link">Monday 1 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-2-mar-2021" class="nav-link">Tuesday 2 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-3-mar-2021" class="nav-link">Wednesday 3 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-4-mar-2021" class="nav-link">Thursday 4 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-5-mar-2021" class="nav-link">Friday 5 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-10-" class="nav-link">--WEEK 10--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-8-mar-2021" class="nav-link">Monday 8 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-9-mar-2021" class="nav-link">Tuesday 9 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-10-mar-2021" class="nav-link">Wednesday 10 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-11-mar-2021" class="nav-link">Thursday 11 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-12-mar-2021" class="nav-link">Friday 12 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#crossfit-open-211-scaled" class="nav-link">CROSSFIT OPEN 21.1 (SCALED)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-11-" class="nav-link">--WEEK 11--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-12-" class="nav-link">--WEEK 12--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-13-" class="nav-link">--WEEK 13--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-29-mar-2021" class="nav-link">Monday 29 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-30-mar-2021" class="nav-link">Tuesday 30 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-31-mar-2021" class="nav-link">Wednesday 31 MAR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-1-apr-2021" class="nav-link">Thursday 1 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-2-apr-2021" class="nav-link">Friday 2 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#saturday-3-apr-2021" class="nav-link">Saturday 3 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#-week-14-" class="nav-link">--WEEK 14--</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-5-apr-2021" class="nav-link">Monday 5 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-6-apr-2021" class="nav-link">Tuesday 6 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-7-apr-2021" class="nav-link">Wednesday 7 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-8-apr-2021" class="nav-link">Thursday 8 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-9-apr-2021" class="nav-link">Friday 9 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#monday-12-apr-2021" class="nav-link">Monday 12 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#tuesday-13-apr-2021" class="nav-link">Tuesday 13 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#wednesday-14-apr-2021" class="nav-link">Wednesday 14 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#thursday-15-apr-2021" class="nav-link">Thursday 15 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#friday-16-apr-2021" class="nav-link">Friday 16 APR 2021</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
 </div></div>
-                <div class="col-md-9" role="main">
+                    <div class="col-md-9" role="main">
 
 <h2 id="-week-32-">--Week 32--<br><a class="headerlink" href="#-week-32-" title="Permanent link">#</a></h2>
 <h1 id="monday-3-aug-2020">Monday 3 AUG 2020<a class="headerlink" href="#monday-3-aug-2020" title="Permanent link">#</a></h1>
@@ -158,7 +893,863 @@ V-ups -- <em>scaled to situps</em><br />
 <h1 id="thursday-29-oct-2020">Thursday 29 OCT 2020<a class="headerlink" href="#thursday-29-oct-2020" title="Permanent link">#</a></h1>
 <blockquote>
 <p><a href="../benchmarks/#1-hang-power-snatch-1-snatch-balance-1-overhead-squat">Benchmarks - 1 Hang Power Snatch + 1 Snatch Balance + 1 OHS</a></p>
+</blockquote>
+<h1 id="friday-30-oct-2020">Friday 30 OCT 2020<a class="headerlink" href="#friday-30-oct-2020" title="Permanent link">#</a></h1>
+<p>Teams of 2, only one athlete working at a time.</p>
+<blockquote>
+<p>20 Pushups<br />
+30 Jumping Lunges<br />
+40 Situps (partner anchor)<br />
+<strong>Completion: 5+2</strong></p>
+</blockquote>
+<h2 id="-week-45-">--<strong>Week 45</strong>--<a class="headerlink" href="#-week-45-" title="Permanent link">#</a></h2>
+<h1 id="monday-2-nov-2020">Monday 2 NOV 2020<a class="headerlink" href="#monday-2-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>5 Rounds for Time</strong><br />
+<strong>Use 55/"35" lbs</strong></p>
+<blockquote>
+<p>5 Dumbbell Deadlifts<br />
+5 Dumbbell Power Hang Cleans  <br />
+5 Dumbbell Push Press<br />
+5 Dumbbell Front Squats<br />
+200 meter sprint<br />
+<strong>Completion Time: 15:41 w/35lbs</strong></p>
+</blockquote>
+<h1 id="tuesday-3-nov-2020">Tuesday 3 NOV 2020<a class="headerlink" href="#tuesday-3-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>20 Minute AMRAP</strong></p>
+<blockquote>
+<p>10 strict chin-ups<br />
+10 Ring Dips<br />
+30 situps<br />
+<strong>Completed: 2 rounds + 20</strong></p>
+</blockquote>
+<h1 id="wednesday-4-nov-2020">Wednesday 4 NOV 2020<a class="headerlink" href="#wednesday-4-nov-2020" title="Permanent link">#</a></h1>
+<blockquote>
+<p><a href="../benchmarks/#front-squats">Benchmarks - Front Squats</a></p>
+</blockquote>
+<h1 id="thursday-5-nov-2020">Thursday 5 NOV 2020<a class="headerlink" href="#thursday-5-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>5 Rounds for Time</strong></p>
+<blockquote>
+<p>30 Double Unders (scaled to jumping jacks)<br />
+6 Power Snatches 135/"<strong>95</strong>" lbs<br />
+<strong>Completion Time: 10:05</strong></p>
+</blockquote>
+<h1 id="friday-6-nov-2020">Friday 6 NOV 2020<a class="headerlink" href="#friday-6-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>3 Rounds for Time</strong></p>
+<blockquote>
+<p>400m run (scaled to 200m after 1st round)<br />
+25 Wall Balls 20/"<strong>14</strong>" lbs 10'<br />
+20 Sumo Dead Lift High Pulls 75/55lbs (used 65lbs)<br />
+15 Burpee Box Jump Overs 24/"<strong>20</strong>" inch box<br />
+<strong>Completion Time: 27:07</strong></p>
+</blockquote>
+<h2 id="-week-46-">--<strong>Week 46</strong>--<a class="headerlink" href="#-week-46-" title="Permanent link">#</a></h2>
+<h1 id="monday-9-nov-2020">Monday 9 NOV 2020<a class="headerlink" href="#monday-9-nov-2020" title="Permanent link">#</a></h1>
+<blockquote>
+<p><a href="../benchmarks/#ground-to-overhead">Benchmarks - Ground to Overhead</a></p>
+</blockquote>
+<h1 id="tuesday-10-nov-2020">Tuesday 10 NOV 2020<a class="headerlink" href="#tuesday-10-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>6 Rounds for Time</strong></p>
+<blockquote>
+<p>15 Toes to bar (scaled to leg raises and candlesticks)<br />
+30 Walking Lunges<br />
+<strong>Completion Time: 17:30</strong></p>
+</blockquote>
+<h1 id="wednesday-11-nov-2020">Wednesday 11 NOV 2020<a class="headerlink" href="#wednesday-11-nov-2020" title="Permanent link">#</a></h1>
+<blockquote>
+<p><a href="../benchmarks/#strict-press">Benchmarks - Strict Press</a></p>
+</blockquote>
+<h1 id="thursday-12-nov-2020">Thursday 12 NOV 2020<a class="headerlink" href="#thursday-12-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>3 Rounds of:</strong></p>
+<blockquote>
+<p>1-Minute Chest to bar pullups (scaled to sitting pullups)<br />
+1-Minute Box Jumps 24/<strong>"20"</strong><br />
+1-Minute Kettle Bell Swings 53/<strong>"35"</strong><br />
+1-Minute Burpees<br />
+1-Minute rest<br />
+<strong>Score: 143</strong></p>
+</blockquote>
+<h1 id="friday-13-nov-2020">Friday 13 NOV 2020<a class="headerlink" href="#friday-13-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>For Time</strong></p>
+<blockquote>
+<p>Run 1 mile<br />
+150 Squats<br />
+<strong>Completion Time: 20:16</strong></p>
+</blockquote>
+<h2 id="-week-47-"><strong>--Week 47--</strong><a class="headerlink" href="#-week-47-" title="Permanent link">#</a></h2>
+<h1 id="monday-16-nov-2020">Monday 16 NOV 2020<a class="headerlink" href="#monday-16-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>14 Minute AMRAP</strong></p>
+<blockquote>
+<p>6 Power Cleancs 115/75 (<strong>"95"</strong>/65)<br />
+12 Pushups<br />
+26 Double Unders (scaled to jumping jacks)<br />
+<strong>Completion: 5 Rounds + 14</strong></p>
+</blockquote>
+<h1 id="tuesday-17-nov-2020">Tuesday 17 NOV 2020<a class="headerlink" href="#tuesday-17-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>Tabata Mashup</strong></p>
+<blockquote>
+<p>Jumping pull-ups<br />
+Dumb bell strict press 35/<strong>"20"</strong><br />
+Hollow log Rocks<br />
+Calories on Rower<br />
+Rest 1 minute between movements<br />
+<strong>Completed: 247</strong></p>
+</blockquote>
+<h1 id="wednesday-18-nov-2020">Wednesday 18 NOV 2020<a class="headerlink" href="#wednesday-18-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>21-15-9</strong></p>
+<blockquote>
+<p>Deadlifts 225/<strong>"155"</strong><br />
+Burpee Box Jump 24/<strong>"20"</strong><br />
+<strong>Completion Time: 12:20</strong></p>
+</blockquote>
+<h1 id="thursday-19-nov-2020">Thursday 19 NOV 2020<a class="headerlink" href="#thursday-19-nov-2020" title="Permanent link">#</a></h1>
+<blockquote>
+<p><a href="../benchmarks/#hang-power-snatch">Benchmarks - Hang Power Snatch</a></p>
+</blockquote>
+<h1 id="friday-20-nov-2020">Friday 20 NOV 2020<a class="headerlink" href="#friday-20-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>4 Rounds</strong>  </p>
+<blockquote>
+<p>3 minute AMRAP<br />
+400m sprint (scaled to 90sec assault bike due to calf)<br />
+Max Muscle-ups in the remaining time. (scaled to low bar)<br />
+Rest 2 minutes between rounds.<br />
+Score is total Bar Muscle-ups.<br />
+<strong>Completion: 22 1:30</strong></p>
+</blockquote>
+<h2 id="-week-48-"><strong>--Week 48--</strong><a class="headerlink" href="#-week-48-" title="Permanent link">#</a></h2>
+<h1 id="monday-23-nov-2020">Monday 23 NOV 2020<a class="headerlink" href="#monday-23-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>5-4-3-2-1</strong></p>
+<blockquote>
+<p>Power Clean and Jerk 185/130lbs ("<strong>155 down to 135 after tweeking back</strong>")<br />
+<strong>50-40-30-30-10</strong><br />
+Double Unders (Scaled to Jumping Jacks)<br />
+<strong>Completion: 9:17</strong></p>
+</blockquote>
+<h1 id="tuesday-24-nov-2020">Tuesday 24 NOV 2020<a class="headerlink" href="#tuesday-24-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>15 Minute AMRAP</strong></p>
+<blockquote>
+<p>9 Pull-ups (scaled to sitting pullups)<br />
+15 Squats<br />
+21 Sit-ups (scaled to 15)<br />
+<strong>Completion: 3+19 Rounds</strong></p>
+</blockquote>
+<h1 id="wednesday-25-nov-2020">Wednesday 25 NOV 2020<a class="headerlink" href="#wednesday-25-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>6 Rounds for Time</strong></p>
+<blockquote>
+<p>200m Sprint<br />
+15 Kettlebell Swings 53/<strong>"35"</strong><br />
+10 Box Step overs (24/<strong>"20"</strong>) with the same kettlebell<br />
+<strong>Completion: 21:42</strong>  </p>
+</blockquote>
+<h1 id="thanksgiving-break"><strong>THANKSGIVING BREAK</strong><a class="headerlink" href="#thanksgiving-break" title="Permanent link">#</a></h1>
+<h2 id="-week-49-"><strong>--Week 49--</strong><a class="headerlink" href="#-week-49-" title="Permanent link">#</a></h2>
+<h1 id="monday-30-nov-2020">Monday 30 NOV 2020<a class="headerlink" href="#monday-30-nov-2020" title="Permanent link">#</a></h1>
+<p><strong>10 Minute AMRAP</strong></p>
+<blockquote>
+<p>7 Dead Lifts 315/220 (used 225)<br />
+14 Push-ups (barbell low on rack)<br />
+<strong>Completion: 4+18</strong></p>
+</blockquote>
+<h1 id="tuesday-1-dec-2020">Tuesday 1 DEC 2020<a class="headerlink" href="#tuesday-1-dec-2020" title="Permanent link">#</a></h1>
+<blockquote>
+<p>100 Double Unders (scaled to jumping jacks)<br />
+30 Dumbbell Hang Power Snatch (50/<strong>"35"</strong>)<br />
+30 Wall Balls 20/<strong>"14"</strong> (<strong>"10ft"</strong>/9' target)<br />
+75 Double Unders<br />
+20 DB Hang Power Snatch<br />
+50 Double Unders<br />
+10 DB Hang Power Snatch<br />
+10 Wall Balls<br />
+Alternate arms every 5 Snatch.<br />
+<strong>Completion: 13:39</strong>  </p>
+</blockquote>
+<h1 id="wednesday-2-dec-2020">Wednesday 2 DEC 2020<a class="headerlink" href="#wednesday-2-dec-2020" title="Permanent link">#</a></h1>
+<blockquote>
+<p>1-Minute Chest-to-Bar Pullups (scaled with sitting pullups)<br />
+1-Minute Tuck-ups (scaled to situps)<br />
+1-Minute Box Jumps 24/<strong>"20"</strong> inches<br />
+2-Minute Chest-to-Bar Pullups (scaled with sitting pullups)<br />
+2-Minute Tuck-ups (scaled to situps)<br />
+2-Minute Box Jumps 24/<strong>"20"</strong> inches<br />
+3-Minute Chest-to-Bar Pullups (scaled with sitting pullups)<br />
+3-Minute Tuck-ups (scaled to situps)<br />
+3-Minute Box Jumps 24/<strong>"20"</strong> inches<br />
+<strong>Completion: 203 Reps</strong><br />
+<a href="https://drive.google.com/file/d/1miWczQuLO2MjQhPZpEloK5H9c0UZJBny/view?usp=sharing">Deer Scare</a>  </p>
+</blockquote>
+<h1 id="thursday-3-dec-2020">Thursday 3 DEC 2020<a class="headerlink" href="#thursday-3-dec-2020" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#overhead-squats">Benchmarks - Overhead Squats</a>  </p>
+<h1 id="friday-4-dec-2020">Friday 4 DEC 2020<a class="headerlink" href="#friday-4-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>21-15-9</strong></p>
+<blockquote>
+<p>Burpees to a 45lb plate<br />
+Power Clean and Jerk <strong>"115"</strong>/75lbs<br />
+<strong>Completion: RX 14:57</strong></p>
+</blockquote>
+<h1 id="saturday-5-dec-2020">Saturday 5 DEC 2020<a class="headerlink" href="#saturday-5-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>OPEN GYM</strong></p>
+<blockquote>
+<p>Worked on situps, double unders, hand-stand pushups, cycling the bar.</p>
+</blockquote>
+<h2 id="-week-50-"><strong>--Week 50--</strong><a class="headerlink" href="#-week-50-" title="Permanent link">#</a></h2>
+<h1 id="monday-7-dec-2020">Monday 7 DEC 2020<a class="headerlink" href="#monday-7-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>5 Rounds for Time</strong></p>
+<blockquote>
+<p>200m Sprint<br />
+15 Sumo Dead Lift High Pull <strong>"75"</strong>/55lbs<br />
+10 Toes-to-Bar<br />
+<strong>Completion: 17:01</strong></p>
+<p><a href="https://drive.google.com/file/d/1iHcjnScmEWQbk489UkEcUdu4WcY2-bVi/view?usp=sharing">Deer Scare 2</a></p>
+</blockquote>
+<h1 id="tuesday-8-dec-2020">Tuesday 8 DEC 2020<a class="headerlink" href="#tuesday-8-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>20 Minute AMRAP</strong></p>
+<blockquote>
+<p>50' Overhead Walking Lunges <strong>"45"</strong>/35 lbs<br />
+40 Sit-ups<br />
+30 Double Unders (scaled to trying du's)<br />
+<strong>Completion: 4 Rounds + 2 reps</strong></p>
+</blockquote>
+<h1 id="wednesday-9-dec-2020">Wednesday 9 DEC 2020<a class="headerlink" href="#wednesday-9-dec-2020" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#power-clean">Benchmarks - Power Clean</a></p>
+<h1 id="thursday-10-dec-2020">Thursday 10 DEC 2020<a class="headerlink" href="#thursday-10-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>Nicole</strong></p>
+<p><strong>Complete as many rounds in 20 minutes as you can of:</strong></p>
+<blockquote>
+<p>Run 400 meters<br />
+Max Rep Pull-ups<br />
+<strong>Completion:  24 pullups</strong></p>
+</blockquote>
+<h1 id="friday-11-dec-2020">Friday 11 DEC 2020<a class="headerlink" href="#friday-11-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>12-9-6-3</strong></p>
+<blockquote>
+<p>Burpees over the Bar<br />
+Shoulder to overhead 155/110 lbs<br />
+<strong>Completion: 7:22 with 115 lbs</strong>  </p>
+</blockquote>
+<h1 id="saturday-12-dec-2020">Saturday 12 DEC 2020<a class="headerlink" href="#saturday-12-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>Open Gym</strong></p>
+<blockquote>
+<p>Worked on situps (200), double unders, dips, pullups  </p>
+</blockquote>
+<h1 id="-week-51-"><strong>--Week 51--</strong><a class="headerlink" href="#-week-51-" title="Permanent link">#</a></h1>
+<h1 id="monday-14-dec-2020">Monday 14 DEC 2020<a class="headerlink" href="#monday-14-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>12 Minute AMRAP</strong></p>
+<blockquote>
+<p>4 Hand Stand Push-ups<br />
+8 Hang Power Cleans<br />
+12 Front Squats<br />
+75/55 lbs (used 95lbs)<br />
+<strong>Completion: 3 Rounds + 13 Reps</strong>  </p>
+</blockquote>
+<h1 id="tuesday-15-dec-2020">Tuesday 15 DEC 2020<a class="headerlink" href="#tuesday-15-dec-2020" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#dead-lift_1">Benchmarks - Dead Lift</a></p>
+<h1 id="wednesday-16-dec-2020">Wednesday 16 DEC 2020<a class="headerlink" href="#wednesday-16-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>"Annie"</strong></p>
+<blockquote>
+<p>50-40-30-20-10  </p>
+<p>Double Unders (scaled to Jumping Jacks)<br />
+Sit-ups<br />
+<strong>Completion: 10:46</strong></p>
+</blockquote>
+<h1 id="thursday-17-dec-2020">Thursday 17 DEC 2020<a class="headerlink" href="#thursday-17-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>U-Turn Crossfit in Kingwood</strong>  </p>
+<blockquote>
+<p>Partner Workout:<br />
+For Time:<br />
+50 Devil Press (50/<strong>"35"</strong>)<br />
+<em>While partner holds plank on Elbows</em>  <br />
+75 Burpee Box Jump Overs (24/<strong>"20"</strong>)<br />
+<em>While Partner Dead Hangs from Pull-up Bar</em>  <br />
+100 Hand Stand Push-ups<br />
+<em>While Partner Rests</em>  <br />
+<strong>Completion: Went to 20 Minute cap</strong></p>
+</blockquote>
+<h1 id="friday-18-dec-2020">Friday 18 DEC 2020<a class="headerlink" href="#friday-18-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>21-18-15-12-9-6-3</strong></p>
+<blockquote>
+<p>Kettle Bell Swings 53/35 (used 35 for 18, 15, 12 - rest with 53)<br />
+Ring Pushups (scaled to knees using dumbbells)  <br />
+<strong>Completion: 12:40</strong></p>
+</blockquote>
+<h1 id="saturday-19-dec-2020">Saturday 19 DEC 2020<a class="headerlink" href="#saturday-19-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>Partner WOD</strong></p>
+<blockquote>
+<p>25' lunge with 50lb dumbbell<br />
+man on fire burpees<br />
+chest to bars</p>
+</blockquote>
+<h1 id="-week-52-"><strong>--Week 52--</strong><a class="headerlink" href="#-week-52-" title="Permanent link">#</a></h1>
+<h1 id="monday-21-dec-2020">Monday 21 DEC 2020<a class="headerlink" href="#monday-21-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>Part A</strong>  </p>
+<blockquote>
+<p>10 Minutes<br />
+Work up to a heavy pair of cleans</p>
+</blockquote>
+<p><strong>Part B</strong>  </p>
+<blockquote>
+<p>20:00 Minute EMOM<br />
+On the minute every minute 2 cleans with the weight established in Part A.<br />
+<strong>Completion: 155 (last 3 @ 135) 5 in last minute.</strong></p>
+</blockquote>
+<h1 id="tuesday-22-dec-2020">Tuesday 22 DEC 2020<a class="headerlink" href="#tuesday-22-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>3 Rounds For Time</strong></p>
+<blockquote>
+<p>400m Sprint<br />
+15 Overhead Squats 115/<strong>"75"</strong><br />
+5 15' Rope Climbs<br />
+<strong>Completion: 20:28</strong></p>
+</blockquote>
+<h1 id="wednesday-23-dec-2020">Wednesday 23 DEC 2020<a class="headerlink" href="#wednesday-23-dec-2020" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#power-snatch">Benchmarks - Power Snatch</a></p>
+<h1 id="thursday-24-dec-2020">Thursday 24 DEC 2020<a class="headerlink" href="#thursday-24-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>12 DAYS of Christmas (scaled)</strong></p>
+<blockquote>
+<p>1 sitting chest-to-bar pullup<br />
+2 Overhead sqats 75lbs<br />
+3 Power Snatches 75lbs<br />
+4 Box Jumps 24"<br />
+5 Push-ups<br />
+6 Air Squats<br />
+7 ABMAT Situps<br />
+8 Kettle Bell Swings 35lbs<br />
+9 Hand stand pushups from box<br />
+10 Front Squats 75lbs<br />
+11 Burpees<br />
+12 Power Clean and Jerk 75lbs<br />
+<strong>Completion: Hit Time Cap in Power Clean and Jerk</strong></p>
+</blockquote>
+<h1 id="-week-53-"><strong>--Week 53--</strong><a class="headerlink" href="#-week-53-" title="Permanent link">#</a></h1>
+<h1 id="monday-28-dec-2020">Monday 28 DEC 2020<a class="headerlink" href="#monday-28-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>15 Minute AMRAP</strong></p>
+<blockquote>
+<p>5 Strict Pullups (scaled to sitting)<br />
+10 Dumbell Dead Lifts 50lbs<br />
+30 Double Unders (scaled to 30 sec trying and 30 jumping jacks)<br />
+<strong>Completion: 5+15</strong></p>
+</blockquote>
+<h1 id="tuesday-29-dec-2020">Tuesday 29 DEC 2020<a class="headerlink" href="#tuesday-29-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>5 Rounds for Time</strong></p>
+<blockquote>
+<p>20 Push-ups<br />
+50 Squats 
+1st Rd RX, 2nd box push-ups, 3rd and later were 15/40 per round<br />
+<strong>Completion: 15:56</strong></p>
+</blockquote>
+<h1 id="wednesday-30-dec-2020">Wednesday 30 DEC 2020<a class="headerlink" href="#wednesday-30-dec-2020" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#push-press">Benchmarks - Push Press</a>  </p>
+<h1 id="thursday-31-dec-2020">Thursday 31 DEC 2020<a class="headerlink" href="#thursday-31-dec-2020" title="Permanent link">#</a></h1>
+<p><strong>For Time:</strong>  </p>
+<blockquote>
+<p>100 Kettle Bell Swings 53lbs<br />
+100 Box Jums 24"<br />
+100 Toes to Bar<br />
+100 Ground to Overhead 75lbs<br />
+In teams of two, complete the work with only one athlete working at a time. Non-working athlete must hold a plank while the other athlete is working.<br />
+<strong>Completion: 25:56</strong></p>
+</blockquote>
+<h1 id="saturday-2-jan-2021">Saturday 2 Jan 2021<a class="headerlink" href="#saturday-2-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>Open Box</strong>  </p>
+<blockquote>
+<p>200 situps, strict sitting pullups, and DU's</p>
+</blockquote>
+<h1 id="-week-1-2021"><strong>--Week 1--"2021"</strong><a class="headerlink" href="#-week-1-2021" title="Permanent link">#</a></h1>
+<h1 id="monday-4-jan-2021">Monday 4 Jan 2021<a class="headerlink" href="#monday-4-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>4 Rounds for Time</strong>  </p>
+<blockquote>
+<p>Every 4 minutes complete the following:<br />
+200m Sprint<br />
+10 Burpees<br />
+10 Clusters 95/<strong>"65"</strong>lbs.<br />
+<strong>Completion: 2:44, 3:02, 3:35, 3:56</strong></p>
+</blockquote>
+<h1 id="tuesday-5-jan-2021">Tuesday 5 JAN 2021<a class="headerlink" href="#tuesday-5-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>9 Minute AMRAP</strong>  </p>
+<blockquote>
+<p>7 Dead Lifts 225lbs<br />
+11 Ring Dips (scaled to box dips)<br />
+<strong>Completion: 4+11</strong></p>
+</blockquote>
+<h1 id="wednesday-6-jan-2021">Wednesday 6 JAN 2021<a class="headerlink" href="#wednesday-6-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>15 Rounds for Time</strong></p>
+<blockquote>
+<p>5 Pull-ups<br />
+10 V-ups (scaled to situps)<br />
+15 Squats<br />
+<strong>Completion: 25:10</strong></p>
+</blockquote>
+<h1 id="thursday-7-jan-2021">Thursday 7 JAN 2021<a class="headerlink" href="#thursday-7-jan-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#1-hang-power-clean-1-power-clean-1-shoulder-to-overhead">Benchmarks - Barbell Complex</a></p>
+<h1 id="friday-8-jan-2021">Friday 8 JAN 2021<a class="headerlink" href="#friday-8-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>5 Rounds for time:</strong></p>
+<blockquote>
+<p>15 KB Swings 70/<strong>"53"</strong>lbs<br />
+30 Double Unders (scaled to 1min of DU's and then jumping jacks)<br />
+<strong>Completion: 12:07</strong></p>
+</blockquote>
+<h1 id="saturday-9-jan-2021">Saturday 9 JAN 2021<a class="headerlink" href="#saturday-9-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>Open Gym</strong></p>
+<blockquote>
+<p>Worked on DU's, 200 situps, sitting strict pullups, rope pull</p>
+</blockquote>
+<h1 id="-week-2-"><strong>--Week 2--</strong><a class="headerlink" href="#-week-2-" title="Permanent link">#</a></h1>
+<h1 id="monday-11-jan-2021">Monday 11 JAN 2021<a class="headerlink" href="#monday-11-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>Task Tabata</strong></p>
+<p><strong>300 Reps for Time, following the pattern:</strong></p>
+<blockquote>
+<p>20 seconds of pull-ups<br />
+10 seconds of rest<br />
+20 seconds of push-ups<br />
+10 seconds of rest<br />
+20 seconds of situps<br />
+10 seconds of rest<br />
+20 seconds of squats<br />
+10 seconds of rest<br />
+After the round of squats, begin again with the pull-ups. Keep a running total of reps and continue<br />
+working until 300 reps are completed.<br />
+<strong>Completion: 17:55</strong></p>
+</blockquote>
+<h1 id="tuesday-12-jan-2021">Tuesday 12 JAN 2021<a class="headerlink" href="#tuesday-12-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>A. Take 10 minutes to work up to a heavy Hang Power Snatch.</strong></p>
+<p><strong>B. 15 Minutes OMEM of 3 Hang Power Snatches.</strong></p>
+<p><strong>Completion: 115lbs, 5 reps in last minute</strong></p>
+<h1 id="wednesday-13-jan-2021">Wednesday 13 JAN 2021<a class="headerlink" href="#wednesday-13-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>21-15-9</strong></p>
+<blockquote>
+<p>Chest-to-Bar pull-ups (scaled to sitting)  </p>
+</blockquote>
+<p><strong>42-30-18</strong></p>
+<p><strong>Completion: 10:02</strong></p>
+<h1 id="thursday-14-jan-2021">Thursday 14 JAN 2021<a class="headerlink" href="#thursday-14-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>For Time:</strong></p>
+<blockquote>
+<p>50 Calories on Rower<br />
+50 Double Unders<br />
+50 Strict Press 45lbs<br />
+50 Double Unders<br />
+50 Hollow Log Rocks<br />
+50 Double Unders<br />
+<strong>Completion: 17:50</strong></p>
+</blockquote>
+<h1 id="friday-15-jan-2021">Friday 15 JAN 2021<a class="headerlink" href="#friday-15-jan-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#clean">Benchmarks - Clean</a></p>
+<h1 id="saturday-16-jan-2021">Saturday 16 JAN 2021<a class="headerlink" href="#saturday-16-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>Community Partner WOD</strong></p>
+<blockquote>
+<p>200 Meter run<br />
+20 burpee box jump overs<br />
+20 kettlebell deadlifts 50lbs  </p>
+</blockquote>
+<h1 id="-week-3-"><strong>--Week 3--</strong><a class="headerlink" href="#-week-3-" title="Permanent link">#</a></h1>
+<h1 id="monday-18-jan-2021">Monday 18 JAN 2021<a class="headerlink" href="#monday-18-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>3 Rounds for Time</strong></p>
+<blockquote>
+<p>400m Run<br />
+30 Weighted Walking Lunges 35lbs<br />
+5 Wall Walks<br />
+<strong>Completion: 23:12</strong></p>
+</blockquote>
+<h1 id="tuesday-19-jan-2021">Tuesday 19 JAN 2021<a class="headerlink" href="#tuesday-19-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>7 Minute AMRAP</strong></p>
+<blockquote>
+<p>5 Box Jumps 30/<strong>"24in"</strong><br />
+3 Power Cleans 185/130 (did 75 due to wrist)<br />
+<strong>Completion: 7</strong></p>
+</blockquote>
+<h1 id="wednesday-20-jan-2021">Wednesday 20 JAN 2021<a class="headerlink" href="#wednesday-20-jan-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#push-press_1">Benchmark - Push Press</a></p>
+<h1 id="thursday-21-jan-2021">Thursday 21 JAN 2021<a class="headerlink" href="#thursday-21-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>7 Rounds for Time:</strong></p>
+<blockquote>
+<p>12 Sumo Dead Lift High Pulls 75lbs<br />
+24 ABMAT situps<br />
+36 Double Unders<br />
+<strong>Completion: 23:12</strong></p>
+</blockquote>
+<h1 id="friday-22-jan-2021">Friday 22 JAN 2021<a class="headerlink" href="#friday-22-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>20 Minute OMEM</strong></p>
+<blockquote>
+<p>Odd Minutes 30 Seconds of pull-ups<br />
+Even Minuts 30 Seconds of Front Squats 95lbs<br />
+<strong>Completion: ?</strong></p>
+</blockquote>
+<h1 id="-week-4-"><strong>--Week 4--</strong><a class="headerlink" href="#-week-4-" title="Permanent link">#</a></h1>
+<h1 id="monday-25-jan-2021">Monday 25 Jan 2021<a class="headerlink" href="#monday-25-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>Missed due to sinuses</strong></p>
+<h1 id="tuesday-26-jan-2021">Tuesday 26 Jan 2021<a class="headerlink" href="#tuesday-26-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>Missed due to sinuses</strong></p>
+<h1 id="wednesday-27-jan-2021">Wednesday 27 Jan 2021<a class="headerlink" href="#wednesday-27-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>Mised due to sinuses</strong></p>
+<h1 id="thursday-28-jan-2021">Thursday 28 Jan 2021<a class="headerlink" href="#thursday-28-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>Missed due to sinuses</strong></p>
+<h1 id="friday-29-jan-2021">Friday 29 Jan 2021<a class="headerlink" href="#friday-29-jan-2021" title="Permanent link">#</a></h1>
+<p><strong>20 Minute AMRAP</strong></p>
+<blockquote>
+<p>500m Row<br />
+6 Right Arm Turkish Get-ups 50lbs dumbell (scaled to 35lbs)<br />
+7 Left Arm Turkish Get-ups 50lbs dumbell (scaled to 35lbs)<br />
+In teams of 2, partition the reps any way you see fit.<br />
+<strong>Completion: 4 Rds plus 41meter row</strong></p>
+</blockquote>
+<h1 id="saturday-30-jan-2021">Saturday 30 JAN 2021<a class="headerlink" href="#saturday-30-jan-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#backsquats">Benchmark - Backsquats</a></p>
+<h1 id="-week-5-"><strong>--Week 5--</strong><a class="headerlink" href="#-week-5-" title="Permanent link">#</a></h1>
+<h1 id="monday-1-feb-2021">Monday 1 FEB 2021<a class="headerlink" href="#monday-1-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>Cindy</strong></p>
+<blockquote>
+<p>5 pull-ups<br />
+10 push-ups<br />
+15 squats<br />
+<strong>Completion: 9 Rounds + 8 more reps</strong></p>
+</blockquote>
+<h1 id="tuesday-2-feb-2021">Tuesday 2 FEB 2021<a class="headerlink" href="#tuesday-2-feb-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#power-cleans">Benchmark - Power Cleans</a></p>
+<h1 id="wednesday-3-feb-2021">Wednesday 3 FEB 2021<a class="headerlink" href="#wednesday-3-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>5 Rounds for Time</strong></p>
+<blockquote>
+<p>200m Sprint<br />
+21 Tucks<br />
+12 one-arm dumbell snatches 50lbs<br />
+<strong>Completion: 19:35</strong></p>
+</blockquote>
+<h1 id="thursday-4-feb-2021">Thursday 4 FEB 2021<a class="headerlink" href="#thursday-4-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>3 Rounds for Time</strong></p>
+<blockquote>
+<p>30 Overhead Squats 75lbs (scaled to 45lbs after first round)<br />
+50 Double Unders (or work on them for 1 min)<br />
+<strong>Completion: 12:25</strong></p>
+</blockquote>
+<h1 id="friday-5-feb-2021">Friday 5 FEB 2021<a class="headerlink" href="#friday-5-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>15 minute AMRAP</strong></p>
+<blockquote>
+<p>150' pinch walk with 25lb plates<br />
+15 box jumps 24" box<br />
+<strong>Completion: 6 + 163</strong></p>
+</blockquote>
+<h1 id="saturday-6-feb-2021">Saturday 6 FEB 2021<a class="headerlink" href="#saturday-6-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>Open Gym</strong></p>
+<blockquote>
+<p>Worked on negative pullups and negative dips  </p>
+</blockquote>
+<h1 id="-week-6-"><strong>--Week 6--</strong><a class="headerlink" href="#-week-6-" title="Permanent link">#</a></h1>
+<h1 id="monday-8-feb-2021">Monday 8 FEB 2021<a class="headerlink" href="#monday-8-feb-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#elizabeth">Benchmarks - Elizabeth</a></p>
+<h1 id="tuesday-9-feb-2021">Tuesday 9 FEB 2021<a class="headerlink" href="#tuesday-9-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>2 Rounds for Time</strong></p>
+<blockquote>
+<p>800m run (scaled to 600m)<br />
+50 Kettlebell Swings 53/<strong>"35"</strong><br />
+<strong>Completion: 15:28</strong>  </p>
+</blockquote>
+<h1 id="wednesday-10-feb-2021">Wednesday 10 FEB 2021<a class="headerlink" href="#wednesday-10-feb-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#strict-press_1">Benchmarks - Strict Press</a></p>
+<h1 id="thursday-11-feb-2021">Thursday 11 FEB 2021<a class="headerlink" href="#thursday-11-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>4 Rounds for total reps</strong></p>
+<blockquote>
+<p>1-minute chest-to-bar<br />
+1-minute L-sit hold<br />
+1-minute lunges<br />
+1-minute rest<br />
+<strong>Completion: 285 reps</strong></p>
+</blockquote>
+<h1 id="friday-12-feb-2021">Friday 12 FEB 2021<a class="headerlink" href="#friday-12-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>10 Minutes AMRAP</strong></p>
+<blockquote>
+<p>50 Double unders (or 30 sec of trying)<br />
+15 Power Snatches 75lbs (scaled to 55lbs)<br />
+<strong>Completion: 5 round + double unders of 6th round</strong></p>
+</blockquote>
+<h1 id="saturday-13-feb-2021">Saturday 13 FEB 2021<a class="headerlink" href="#saturday-13-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>open gym</strong></p>
+<p><strong>5 Rounds for Time</strong></p>
+<blockquote>
+<p>20 Calorie Row<br />
+15 GHD Situps<br />
+15 box jumps 24"<br />
+<strong>Completion: about 22:30</strong></p>
+</blockquote>
+<h1 id="-week-7-"><strong>--Week 7--</strong><a class="headerlink" href="#-week-7-" title="Permanent link">#</a></h1>
+<p><strong>Monday-Friday Closed for winter storm (ice/snow)</strong></p>
+<h1 id="saturday-20-feb-2021">Saturday 20 FEB 2021<a class="headerlink" href="#saturday-20-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>For Time - 30 Minute Time Cap (Teams of 2)</strong></p>
+<ol>
+<li><strong>Annie</strong>  <blockquote>
+<p>50-40-30-20-10<br />
+Double Unders<br />
+Situps  </p>
+</blockquote>
+</li>
+<li><strong>Fran</strong>  <blockquote>
+<p>21-15-9<br />
+Thrusters 95/65lbs<br />
+Pullups  </p>
+</blockquote>
+</li>
+<li><strong>Grace</strong>  <blockquote>
+<p>30 Clean and Jerks 135/95lbs  </p>
+</blockquote>
+</li>
+<li><strong>Karen</strong>  <blockquote>
+<p>150 Wall Balls 20/14 lbs 10'/9'  </p>
+</blockquote>
+</li>
+<li><strong>Isabel</strong>  <blockquote>
+<p>30 Power Snatches 135/95 lbs  </p>
+</blockquote>
+</li>
+<li><strong>Angie</strong>  <blockquote>
+<p>100 Pullups<br />
+100 Pushups<br />
+100 Sit-ups<br />
+100 Squats  </p>
+</blockquote>
+</li>
+<li><strong>Jackie</strong>  <blockquote>
+<p>1,000m Row<br />
+50 Thrusters 45lbs<br />
+30 Pullups<br />
+<strong>Completion: 25 pullups on angie at time cap</strong></p>
+</blockquote>
+</li>
+</ol>
+<h1 id="-week-8-"><strong>--Week 8--</strong><a class="headerlink" href="#-week-8-" title="Permanent link">#</a></h1>
+<h1 id="monday-22-feb-2021">Monday 22 FEB 2021<a class="headerlink" href="#monday-22-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>12 Minute AMRAP</strong></p>
+<blockquote>
+<p>3 Burpees<br />
+3 Box Jumps <strong>24"</strong>/20"<br />
+3 Kettle Bell Swings 53lbs<br />
+6 Burpees<br />
+6 Box Jumps<br />
+6 KB Swings<br />
+9 Burpees<br />
+9 Box Jumps<br />
+9...<br />
+Continue adding 3 Reps to each round int he remaining time.<br />
+<strong>Completion: Complete 15's plus 4 burpees in 17's</strong></p>
+</blockquote>
+<h1 id="tuesday-23-feb-2021">Tuesday 23 FEB 2021<a class="headerlink" href="#tuesday-23-feb-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#dead-lift_2">Benchmarks - Dead Lift</a></p>
+<h1 id="wednesday-24-feb-2021">Wednesday 24 FEB 2021<a class="headerlink" href="#wednesday-24-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>4 Rounds, 4 Minute AMRAP</strong></p>
+<blockquote>
+<p>400m Run<br />
+Max handstand pushups (mixed standard wall and box)  <br />
+Rest 2 minutes between rounds.<br />
+Score is total pushups.<br />
+<strong>Completion: 35</strong></p>
+</blockquote>
+<h1 id="thursday-25-feb-2021">Thursday 25 FEB 2021<a class="headerlink" href="#thursday-25-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>For Time:</strong></p>
+<blockquote>
+<p>50 Double Unders<br />
+30 Front Squats RX 95/65 SC <strong>"65"</strong>/45lbs.<br />
+75 Double Unders<br />
+20 Front Squats RX 135/95lbs SC <strong>"95"</strong>/65lbs.<br />
+100 Double Unders<br />
+10 Front Squats RX 185/130lbs SC <strong>"135"</strong>/95lbs.<br />
+<strong>Completion: 12:08</strong></p>
+</blockquote>
+<h1 id="friday-26-feb-2021">Friday 26 FEB 2021<a class="headerlink" href="#friday-26-feb-2021" title="Permanent link">#</a></h1>
+<p><strong>18 Minute AMRAP Partner WOD</strong></p>
+<blockquote>
+<p>10 Pullups<br />
+20 Pushups<br />
+30 Situps<br />
+60' Bear crawl for both at the same time<br />
+<strong>Completion: 6+54</strong></p>
+</blockquote>
+<h1 id="-week-9-"><strong>--Week 9--</strong><a class="headerlink" href="#-week-9-" title="Permanent link">#</a></h1>
+<h1 id="monday-1-mar-2021">Monday 1 MAR 2021<a class="headerlink" href="#monday-1-mar-2021" title="Permanent link">#</a></h1>
+<p><strong>Jackie</strong></p>
+<blockquote>
+<p>1,000m Row<br />
+50 Thrusters 45lbs<br />
+30 Pullups<br />
+<strong>Completion: 12:19</strong></p>
+</blockquote>
+<h1 id="tuesday-2-mar-2021">Tuesday 2 MAR 2021<a class="headerlink" href="#tuesday-2-mar-2021" title="Permanent link">#</a></h1>
+<p><strong>15 Minute AMRAP</strong></p>
+<blockquote>
+<p>10 Power Cleans <strong>"95"</strong>/65lbs<br />
+10 Tuck-ups<br />
+30 Double Unders<br />
+<strong>Completion: 6 Rounds</strong></p>
+</blockquote>
+<h1 id="wednesday-3-mar-2021">Wednesday 3 MAR 2021<a class="headerlink" href="#wednesday-3-mar-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#front-squats_1">Benchmarks - Front Squats</a></p>
+<h1 id="thursday-4-mar-2021">Thursday 4 MAR 2021<a class="headerlink" href="#thursday-4-mar-2021" title="Permanent link">#</a></h1>
+<p><strong>6 Rounds for time of:</strong></p>
+<blockquote>
+<p>200m Sprint<br />
+5 Push Press 155/105lbs (used 135lbs)<br />
+<strong>Completion: 12:38</strong></p>
+</blockquote>
+<h1 id="friday-5-mar-2021">Friday 5 MAR 2021<a class="headerlink" href="#friday-5-mar-2021" title="Permanent link">#</a></h1>
+<p><strong>4 Round for time of:</strong></p>
+<blockquote>
+<p>9 Burpees<br />
+12 Dead Lifts <strong>"135"</strong>/95lbs<br />
+15 Toe-to-Bar<br />
+Rest 1 minute between rounds<br />
+<strong>Completion: 11:57</strong></p>
+</blockquote>
+<h1 id="-week-10-"><strong>--WEEK 10--</strong><a class="headerlink" href="#-week-10-" title="Permanent link">#</a></h1>
+<h1 id="monday-8-mar-2021">Monday 8 MAR 2021<a class="headerlink" href="#monday-8-mar-2021" title="Permanent link">#</a></h1>
+<p><strong>For Time:</strong></p>
+<blockquote>
+<p>200m run<br />
+6 rope climbs<br />
+400m run<br />
+4 rope climbs<br />
+800m run<br />
+2 rope climbs<br />
+<strong>Completion: 13:26</strong></p>
+</blockquote>
+<h1 id="tuesday-9-mar-2021">Tuesday 9 MAR 2021<a class="headerlink" href="#tuesday-9-mar-2021" title="Permanent link">#</a></h1>
+<p><strong>5 Rounds, each for time:</strong></p>
+<blockquote>
+<p>20 calorie row<br />
+20 wallballs (20lb ball to 10' target)<br />
+<strong>Completion: about 20 minutes</strong></p>
+</blockquote>
+<h1 id="wednesday-10-mar-2021">Wednesday 10 MAR 2021<a class="headerlink" href="#wednesday-10-mar-2021" title="Permanent link">#</a></h1>
+<p><strong>18 Minute AMRAP</strong></p>
+<blockquote>
+<p>10 Dumbell Floor Press <strong>"50"</strong>/35lbs<br />
+20 Butterfly Situps<br />
+30 Walking Lunges<br />
+<strong>Completion: 6 rounds + 7 reps</strong></p>
+</blockquote>
+<h1 id="thursday-11-mar-2021">Thursday 11 MAR 2021<a class="headerlink" href="#thursday-11-mar-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#hang-power-clean">Benchmarks - Hang Power Clean</a></p>
+<h1 id="friday-12-mar-2021">Friday 12 MAR 2021<a class="headerlink" href="#friday-12-mar-2021" title="Permanent link">#</a></h1>
+<h1 id="crossfit-open-211-scaled">CROSSFIT OPEN 21.1 (SCALED)<a class="headerlink" href="#crossfit-open-211-scaled" title="Permanent link">#</a></h1>
+<p><strong>For Time:</strong></p>
+<blockquote>
+<p>1 wall walk<br />
+10 single unders<br />
+3 wall walks<br />
+30 single unders<br />
+6 wall walks<br />
+60 single unders<br />
+9 wall walks<br />
+90 single unders<br />
+15 wall walks<br />
+150 single unders<br />
+21 wall walks<br />
+210 single unders<br />
+<strong>Completion: 14:28 (under 15 min time cap)</strong></p>
+</blockquote>
+<h1 id="-week-11-"><strong>--WEEK 11--</strong><a class="headerlink" href="#-week-11-" title="Permanent link">#</a></h1>
+<p>CROSSFIT OPEN WEEK</p>
+<h1 id="-week-12-"><strong>--WEEK 12--</strong><a class="headerlink" href="#-week-12-" title="Permanent link">#</a></h1>
+<p>CROSSFIT OPEN WEEK</p>
+<h1 id="-week-13-"><strong>--WEEK 13--</strong><a class="headerlink" href="#-week-13-" title="Permanent link">#</a></h1>
+<h1 id="monday-29-mar-2021">Monday 29 MAR 2021<a class="headerlink" href="#monday-29-mar-2021" title="Permanent link">#</a></h1>
+<p><strong>10 Minute AMRAP</strong></p>
+<blockquote>
+<p>7 Deadlifts 225/<strong>"155"</strong>lbs<br />
+15 Tuckups<br />
+<strong>Completion: 5+7</strong>  </p>
+</blockquote>
+<h1 id="tuesday-30-mar-2021">Tuesday 30 MAR 2021<a class="headerlink" href="#tuesday-30-mar-2021" title="Permanent link">#</a></h1>
+<p><strong>over slept</strong></p>
+<h1 id="wednesday-31-mar-2021">Wednesday 31 MAR 2021<a class="headerlink" href="#wednesday-31-mar-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#bench-press">Benchmarks - Bench Press</a></p>
+<h1 id="thursday-1-apr-2021">Thursday 1 APR 2021<a class="headerlink" href="#thursday-1-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>4 Rounds for Time</strong></p>
+<blockquote>
+<p>25' Left Arm Overhead Walking Lunges 53/<strong>"35"</strong>lbs kettlebell<br />
+25' Right Arm Overhead Walking Lunges 53/<strong>"35"</strong>lbs kettlebell<br />
+15 Pullups<br />
+<strong>Completion: about 15 minutes (late documentation)</strong></p>
+</blockquote>
+<h1 id="friday-2-apr-2021">Friday 2 APR 2021<a class="headerlink" href="#friday-2-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>For Time:</strong></p>
+<blockquote>
+<p>800m Run<br />
+30 Hang Power Cleans (Go Heavy)<br />
+800m Run<br />
+<strong>Completion: 17:28?</strong></p>
+</blockquote>
+<h1 id="saturday-3-apr-2021">Saturday 3 APR 2021<a class="headerlink" href="#saturday-3-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>Passion WOD (Community Workout)</strong></p>
+<blockquote>
+<p>100 Double-unders <strong>(200 Single Unders)</strong><br />
+800m Barbell carry 95lbs<br />
+100 Burpees<br />
+<strong>Completion: 23:17</strong></p>
+</blockquote>
+<h1 id="-week-14-"><strong>--WEEK 14--</strong><a class="headerlink" href="#-week-14-" title="Permanent link">#</a></h1>
+<h1 id="monday-5-apr-2021">Monday 5 APR 2021<a class="headerlink" href="#monday-5-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>20 Minute AMRAP</strong></p>
+<blockquote>
+<p>10 Knees-to-elbow<br />
+10 overhead squats 95/65 lbs<br />
+30 Double Unders<br />
+<strong>Completion: ?</strong></p>
+</blockquote>
+<h1 id="tuesday-6-apr-2021">Tuesday 6 APR 2021<a class="headerlink" href="#tuesday-6-apr-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#power-clean_1">Benchmarks - Power Clean</a></p>
+<h1 id="wednesday-7-apr-2021">Wednesday 7 APR 2021<a class="headerlink" href="#wednesday-7-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>Tabata Mashup</strong></p>
+<blockquote>
+<p>Tabata Push-ups<br />
+Rest 1 Minute<br />
+Tabata Calories<br />
+Rest 1 Minute<br />
+Tabata Box Jumps 20/<strong>"24in"</strong><br />
+Rest 1 Minute<br />
+Tabata Squats<br />
+<strong>Completion: 221 Reps</strong></p>
+</blockquote>
+<h1 id="thursday-8-apr-2021">Thursday 8 APR 2021<a class="headerlink" href="#thursday-8-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>4 Rounds for Time of:</strong></p>
+<blockquote>
+<p>400m Run<br />
+15 Shoulder to overhead 115/75lbs (used 95lbs)<br />
+<strong>Completion: 13:49</strong></p>
+</blockquote>
+<h1 id="friday-9-apr-2021">Friday 9 APR 2021<a class="headerlink" href="#friday-9-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>18-15-12-9-6-3</strong></p>
+<blockquote>
+<p>Dumbbell Dead Lifts <strong>"50"</strong>/35lbs<br />
+Pull-ups<br />
+<strong>Completion: 10:28</strong></p>
+</blockquote>
+<h1 id="monday-12-apr-2021">Monday 12 APR 2021<a class="headerlink" href="#monday-12-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>6 Rounds for time:</strong></p>
+<blockquote>
+<p>200m Sprint<br />
+25 situps<br />
+15 push-ups<br />
+<strong>Completion: 20:00 minutes</strong></p>
+</blockquote>
+<h1 id="tuesday-13-apr-2021">Tuesday 13 APR 2021<a class="headerlink" href="#tuesday-13-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>OMEM</strong></p>
+<blockquote>
+<p>3 Clusters 155/105 (<strong>135 scaled</strong>)<br />
+Remaining Time complete as mnay double unders as possible. Score is total double unders<br />
+Scaled is single unders<br />
+<strong>Completion: failure</strong></p>
+</blockquote>
+<h1 id="wednesday-14-apr-2021">Wednesday 14 APR 2021<a class="headerlink" href="#wednesday-14-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>6 Rounds each for time</strong></p>
+<blockquote>
+<p>Row 500m<br />
+rest the exact time of your previous row. Record your fastest and slowest rounds.<br />
+<strong>Completion: 1:55.03 and 1:49?</strong></p>
+</blockquote>
+<h1 id="thursday-15-apr-2021">Thursday 15 APR 2021<a class="headerlink" href="#thursday-15-apr-2021" title="Permanent link">#</a></h1>
+<p><a href="../benchmarks/#split-jerk">Benchmarks - Split Jerk</a></p>
+<h1 id="friday-16-apr-2021">Friday 16 APR 2021<a class="headerlink" href="#friday-16-apr-2021" title="Permanent link">#</a></h1>
+<p><strong>3 Rounds for Time</strong></p>
+<blockquote>
+<p>45 Air Squats<br />
+30 Kettle bell swings 35lbs<br />
+15 burpees<br />
+<strong>Completion: 13:37</strong></p>
 </blockquote></div>
+            </div>
         </div>
 
         <footer class="col-md-12">
@@ -172,21 +1763,21 @@ V-ups -- <em>scaled to situps</em><br />
         <script src="../js/base.js" defer></script>
         <script src="../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
             </div>
             <div class="modal-body">
                 <p>
                     From here you can search these documents. Enter
                     your search terms below.
                 </p>
-                <form role="form">
+                <form>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
                     </div>
                 </form>
                 <div id="mkdocs-search-results"></div>
@@ -195,12 +1786,12 @@ V-ups -- <em>scaled to situps</em><br />
             </div>
         </div>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
             </div>
             <div class="modal-body">
               <table class="table">
